@@ -41,7 +41,7 @@ public class ExtentReportUtil extends BaseUtil {
         
         //Files.copy(scr.toPath(), new File(reportLocation + "screenshot.png").toPath());
         //scenarioDef.fail("details").addScreenCaptureFromPath(reportLocation + "screenshot.png");
-        File scr = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+        File scr = ((TakesScreenshot)Driver).getScreenshotAs(OutputType.FILE);
         File dest = new File("filePath/" + filename);
         FileUtils.copyFile(scr, dest);
     }
