@@ -30,15 +30,15 @@ public class NGTestListener implements ITestListener {
     }
 
     @Override
-    //public void onTestFailure(ITestResult iTestResult) {
-    //    System.out.println("On test failure");
+    public void onTestFailure(ITestResult iTestResult) {
+       System.out.println("On test failure");
 
-     //   try{
-        //    extentReportUtil.ExtentReportScreenshot();
-      //  }catch (IOException e){
-         //   e.printStackTrace();
-       // }
-   // }
+        try{
+            extentReportUtil.ExtentReportScreenshot();
+        }catch (IOException e){
+            e.printStackTrace();
+        }
+    }
 
     @Override
     public void onTestSkipped(ITestResult iTestResult) {
