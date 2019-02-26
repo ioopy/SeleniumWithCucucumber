@@ -34,7 +34,7 @@ public class ExtentReportUtil extends BaseUtil {
 
     }
 
-    public  void ExtentReportScreenshot() throws IOException {
+    /*public  void ExtentReportScreenshot() throws IOException {
 
         
         var scr = ((TakesScreenshot)Driver).getScreenshotAs(OutputType.FILE);
@@ -43,7 +43,7 @@ public class ExtentReportUtil extends BaseUtil {
         scenarioDef.fail("details").addScreenCaptureFromPath(reportLocation + "screenshot.png");
         
     }
-
+*/
 
     public void FlushReport(){
         extent.flush();
